@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+body {
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(8, 27, 41, 1) 100%);
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+
+.logo {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo>h1 {
+    color: #00ff88;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 10rem;
+
+}
+
+.botoes {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+.ano {
+    margin: 25px;
+    border-radius: 15px;
+    background-color: #00ff88;
+    width: 10vw;
+    height: 10vh;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 1px 1px 20px #ffffff56;
+    border: none;
+
+
+}
+
+a:hover {
+    color: black
+}
+
+
+@media only screen and (max-width: 1400px) {
+    .logo>h1 {
+        font-size: 8rem;
+    }
+
+
+    .ano {
+        display: flex;
+        width: 50vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width: 950px) {
+    .logo>h1 {
+        font-size: 7rem;
+    }
+
+    .ano {
+        display: flex;
+        width: 50vw;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .logo>h1 {
+        font-size: 5rem;
+        
+        left: 10%;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+
+    }
+
+    .ano {
+        display: flex;
+        margin-right: 0px;
+        margin-left: 0px;
+        width: 50vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+.ano.dark {
+    background: #008044;
+
+}
+
+#logo.dark {
+    color: #008044;
+}

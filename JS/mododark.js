@@ -1,0 +1,15 @@
+let trilho = document.getElementById(`trilho`)
+let body = document.querySelector(`body`)
+let ano = document.getElementById('ano')
+let logo = document.getElementById('logo')
+let botao = document.getElementById('botoes')
+
+trilho.addEventListener(`click`, () => {
+    trilho.classList.toggle(`dark`)
+    body.classList.toggle(`dark`)
+    logo.classList.toggle(`dark`)
+    ano.classList.toggle(`dark`)
+    ano2.classList.toggle(`dark`)
+    ano3.classList.toggle(`dark`)
+    botao.classList.toggle(`dark`)
+})

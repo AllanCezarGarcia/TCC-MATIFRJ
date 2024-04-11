@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="./CSS/login.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./CSS/navbar.css">
+</head>
+
+<body>
+    <header class="fixed">
+        <div class="matifrj">
+            <a href="index.html">
+                <h1 class="simbolo">MATIFRJ</h1>
+            </a>
+        </div>
+        <button class="btn-login"><a class="links"href="login.html">Login</a></button>
+    </header>
+    <div class="principal">
+        <div class="esquerda">
+            <h1>Bem vindo ao <br> MATIFRJ</h1>
+            <img src="./svg/noeinsten.svg" class="imagem" alt="noel">
+        </div>
+        <div class="direita">
+            <form class="card-login">
+                <h1>LOGIN</h1>
+                <div class="textfield">
+                    <label for="nome">Email</label>
+                    <input type="email" name="nome" placeholder="example@gmail.com" required>
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Senha" required>
+                </div>
+                <button type="submit" class="submit">Login</button>
+                <p class="footer">Não tem conta? <a href="registro.html" class="link">Por favor, registre-se</a>
+                </p>
+            </form>
+        </div>
+    </div>
+    <div class="trilho" id="trilho">
+        <div class="indicador">
+        </div>
+    </div>
+    <script src="./JS/mododark.js"></script>
+</body>
+
+</html>

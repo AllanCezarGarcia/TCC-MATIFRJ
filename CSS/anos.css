@@ -1,0 +1,125 @@
+body {
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(8, 27, 41, 1) 100%);
+    height: 100vh;
+    background-color: black;
+}
+
+.titulo {
+    height: 35vh;
+    color: #00ff88;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+.quadros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bimestre {
+    height: 30vh;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: #0c2333;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00ff88;
+}
+
+.bimestre>h1 {
+    display: flex;
+    font-size: 30px;
+    width: 8em;
+    color: #00ff88;
+    padding-bottom: 10px;
+}
+
+.aulas {
+    padding-bottom: 5px;
+    font-size: 1.15em;
+}
+
+
+@media only screen and (max-width: 1450px) {
+
+    .bimestre {
+        width: 16em;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .quadros {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1000px;
+    }
+
+    .bimestre {
+        width: 70%;
+        height: 100%;
+        margin-bottom: 50px
+    }
+
+    .bimestre>h1 {
+        font-size: 2.3em;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .quadros {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .bimestre {
+        width: 60%;
+        height: 40%;
+        padding: 30px 35px;
+        margin: 30px 30px;
+    }
+
+    .bimestre>h1 {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .quadros {
+        display: flex;
+        flex-direction: column;
+    }
+    .bimestre {
+        width: 80vw;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px 35px;
+        margin: 30px 30px;
+        background-color: #0c2333;
+        border-radius: 20px;
+        box-shadow: 0px 10px 40px #00ff88;
+    }
+ .bimestre > h1 {
+    font-size: 2em;
+    padding-bottom: 30px;
+ }
+    .aulas {
+        width: 100%;
+        font-size: 0.7em;
+    }
+
+    .titulo {
+        font-size: 3.2rem;
+    }
+}

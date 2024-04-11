@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./CSS/navbar.css">
+    <link rel="stylesheet" href="./CSS/registro.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="matifrj">
+            <a href="index.html">
+                <h1 class="simbolo">MATIFRJ</h1>
+            </a>
+        </div>
+        <button class="btn-login"><a class="links" href="login.html">Login</a></button>
+    </header>
+    <div class="principal">
+        <div class="esquerda">
+            <h1>Bem vindo ao <br> MATIFRJ</h1>
+            <img src="./svg/noeinsten.svg" class="imagem" alt="noel">
+        </div>
+        <div class="direita">
+            <form class="card-login">
+                <h1>REGISTRO</h1>
+                <div class="textfield">
+                    <label for="usuario">Nome</label>
+                    <input type="text" name="usuario" placeholder="Nome completo" required>
+                </div>
+                <div class="textfield">
+                    <label for="cpf">CPF</label>
+                    <input type="cpf" name="cpf" id="cpf" placeholder="CPF" required maxlength="14" onkeyup="mascara_cpf()">
+                </div>
+                <div class="textfield">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="example@gmail.com" required>
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" placeholder="Senha" required minlength="8">
+                </div>
+                <div class="textfield">
+                    <label for="senhaC">Confirmar senha</label>
+                    <input type="password" name="senhaC" id="senhaC" placeholder="Confirmar senha" required minlength="8">
+                </div>
+                <button class="submit">Fazer registro</button>
+                <p class="footer">Já tem conta? <a href="login.html" class="link">Faça login</a></p>
+            </form> 
+        </div>
+    </div>
+    
+    <div class="trilho" id="trilho">
+        <div class="indicador">
+        </div>
+    </div>
+    <script src="./JS/mododark.js"></script>
+<script src="./JS/login.js"></script>
+
+</body>
+
+</html>

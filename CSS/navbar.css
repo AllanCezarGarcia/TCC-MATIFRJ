@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px #000;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.fixed {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    box-shadow: 0 0 10px #000;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.links {
+    color: aliceblue;
+    text-decoration: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+i {
+    color: #fff;
+    cursor: pointer;
+}
+
+header  a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-decoration: none;
+
+}
+
+.simbolo {
+    margin: 10px;
+}
+
+.btn-login {
+    background-color: #9ea7a2;
+    margin-right: 10px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 80px;
+    height: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+}
+
+
+
+
+.trilho {
+    height: 25px;
+    width: 50px;
+    background-color: rgba(240, 248, 255, 0.192);
+    border-radius: 10px;
+    position: fixed;
+    right: 20px;
+    bottom: 15px;
+    cursor: pointer;
+
+}
+
+.trilho .indicador {
+    height: 25px;
+    width: 25px;
+    position: fixed;
+    background-color: #000;
+    border-radius: 50%;
+    transform: scale(.9);
+    right: 43px;
+    transition: .5s;
+}
+
+.trilho.dark {
+    background-color: #000;
+}
+
+
+.trilho.dark .indicador {
+    right: 23px;
+    background-color: white;
+}
+
+body.dark {
+    background: rgb(184, 194, 210);
+    background: radial-gradient(circle, rgba(184, 194, 210, 0.958420868347339) 0%, rgba(184, 204, 235, 1) 100%);
+}
+
+@media only screen and (max-width: 600px) {
+    .btn-login {
+        margin: 30px;
+    }
+ .links{
+    font-size: 1.2em;
+    padding: 0;
+ }
+}

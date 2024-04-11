@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: "noto sans", sans-serif;
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(8, 27, 41, 1) 100%);
+    background-size: cover;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.principal {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    width: 100%;
+    color: #f0ffff94;
+    margin-top: 0px;
+}
+
+.footer>a {
+    width: 100%;
+    color: #00ff88;
+    text-decoration: none;
+}
+
+.esquerda {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.esquerda>h1 {
+    color: #00ff88;
+    font-size: 3vw;
+    margin: 0;
+}
+
+.imagem {
+    width: 30vw;
+}
+
+.direita {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #0c2333;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+
+}
+
+.card-login>h1 {
+    color: #00ff88;
+    font-weight: 800px;
+    margin: 0;
+}
+
+.textfield {
+    width: 100%;
+    margin: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.textfield>input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #255a80;
+    color: #e2e5e7;
+    font-size: 12pt;
+    outline: none;
+}
+
+.textfield>label {
+    margin: 10px 0px;
+    margin-bottom: 10px;
+    color: #f0ffff94;
+}
+
+.textfield>input::placeholder {
+    color: #f0ffff94;
+}
+
+.submit {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #081b29;
+    background: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+@media only screen and (max-width: 1400px) {
+    .card-login {
+        width: 85%;
+    }
+
+    .card-login>h1 {
+        margin-top: 20px;
+        font-size: 25px;
+        top: 20px;
+    }
+
+    .card-login>p {
+        margin: 0px;
+    }
+
+    .submit {
+        margin-bottom: 5px;
+    }
+
+    .imagem {
+        width: 25vw;
+    }
+
+}
+
+@media only screen and (max-width: 950px) {
+    .card-login {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .card-login {
+        position: relative;
+        bottom: 30px;
+    }
+
+    .principal {
+        flex-direction: column;
+    }
+
+    .esquerda>h1 {
+        display: none;
+    }
+
+    .esquerda {
+        height: auto;
+        width: 100%;
+    }
+
+    .direita {
+        height: auto;
+        width: 100%;
+    }
+
+    .imagem {
+        display: none;
+    }
+
+}
