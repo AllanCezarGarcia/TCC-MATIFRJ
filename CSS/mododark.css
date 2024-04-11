@@ -1,0 +1,43 @@
+
+/*botao do modo escuro*/
+.trilho {
+    height: 25px;
+    width: 50px;
+    background-color: rgba(9, 9, 9, 0.445);
+    border-radius: 10px;
+    position: fixed;
+    right: 20px;
+    bottom: 15px;
+    cursor: pointer;
+}
+.trilho .indicador {
+    height: 25px;
+    width: 25px;
+    position: fixed;
+    background-color: white;
+    border-radius: 50%;
+    transform: scale(.9);
+    right: 43px;
+    transition: .5s;
+}
+.trilho.dark {
+    background-color: rgba(255, 255, 255, 0.449);
+}
+.trilho.dark .indicador {
+    right: 23px;
+    background-color: black;
+}
+/*body*/
+body.dark {
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(8, 27, 41, 1) 100%);
+    
+}
+/*botao dos anos no index*/
+.ano.dark {
+    background-color: #00ff88;
+}
+/*Titulo da pagina*/
+#logo.dark {  
+    color: #00ff88;
+}

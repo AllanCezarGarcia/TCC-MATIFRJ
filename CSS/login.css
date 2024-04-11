@@ -3,8 +3,9 @@
 body {
     margin: 0;
     font-family: "noto sans", sans-serif;
-    background: rgb(0, 0, 0);
-    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(8, 27, 41, 1) 100%);
+    background: rgb(184, 194, 210);
+    background: radial-gradient(circle, rgba(184, 194, 210, 0.958420868347339) 0%, rgba(184, 204, 235, 1) 100%);
+   
     background-size: cover;
 }
 

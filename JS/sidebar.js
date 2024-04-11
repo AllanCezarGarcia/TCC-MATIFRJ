@@ -7,7 +7,6 @@ document.getElementById('mobile_btn').addEventListener('change', function() {
 })
 
 
-
 const meuCheckbox = document.getElementById('mobile_btn');
 const meuElemento = document.getElementById('hamburger-lines');
 
