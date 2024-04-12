@@ -18,6 +18,14 @@ body {
     justify-content: center;
     align-items: center;
 }
+.links{
+    padding-bottom: 5px;
+    font-size: 1.15em;
+    list-style: none;
+    color: #0c0c0c;
+    text-decoration: none;
+
+}
 .bimestre {
     height: 30vh;
     width: 60vw;
@@ -27,9 +35,9 @@ body {
     padding: 30px 35px;
     margin-left: 40px;
     margin-right: 40px;
-    background-color: #0c2333;
+    background-color: #e6e6e6;
     border-radius: 20px;
-    box-shadow: 0px 10px 40px  #008044;
+    box-shadow: 0px 10px 40px  #191919;
 }
 
 .bimestre>h1 {
@@ -40,10 +48,6 @@ body {
     padding-bottom: 10px;
 }
 
-.aulas {
-    padding-bottom: 5px;
-    font-size: 1.15em;
-}
 
 
 @media only screen and (max-width: 1450px) {
@@ -66,7 +70,6 @@ body {
         height: 100%;
         margin-bottom: 50px
     }
-
     .bimestre>h1 {
         font-size: 2.3em;
     }
@@ -76,24 +79,18 @@ body {
     .quadros {
         display: flex;
         flex-direction: column;
-
-
     }
-
     .bimestre {
         width: 60%;
         height: 40%;
         padding: 30px 35px;
         margin: 30px 30px;
     }
-
     .bimestre>h1 {
         height: auto;
     }
 }
-
 @media only screen and (max-width: 600px) {
-
     .quadros {
         display: flex;
         flex-direction: column;
@@ -104,11 +101,7 @@ body {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        padding: 30px 35px;
-        margin: 30px 30px;
-        background-color: #0c2333;
-        border-radius: 20px;
-        box-shadow: 0px 10px 40px #00ff88;
+      
     }
  .bimestre > h1 {
     font-size: 2em;

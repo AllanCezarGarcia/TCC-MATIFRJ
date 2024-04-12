@@ -34,10 +34,14 @@ body.dark {
     
 }
 /*botao dos anos no index*/
-.ano.dark {
+.btn_ano.dark {
     background-color: #00ff88;
+    color: black;
 }
 /*Titulo da pagina*/
 #logo.dark {  
     color: #00ff88;
+}
+.bimestre.dark{
+    background-color: black;
 }

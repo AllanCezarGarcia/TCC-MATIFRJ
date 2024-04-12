@@ -15,14 +15,14 @@ const meuElemento = document.getElementById('hamburger-lines');
 meuCheckbox.addEventListener('change', () => {
     // Verifique se o checkbox está marcado
     if (meuCheckbox.checked) {
-        // Se marcado, adicione a classe "ativo" e remova a classe "inativo"
+        // Se marcado, adicione a classe "checkbox_ativo e hamburger-lines_ativo" e remova a classe "checkbox e hamburger-lines"
         meuCheckbox.classList.add('checkbox_ativo');
         meuCheckbox.classList.remove('checkbox');
         meuElemento.classList.add('hamburger-lines_ativo');
         meuElemento.classList.remove('hamburger-lines');
  
     } else {
-        // Caso contrário, adicione a classe "inativo" e remova a classe "ativo"
+        // Caso contrário, adicione a classe "checkbox e hamburger_lines" e remova a classe "checkbox_ativo e hamburger-lines_ativo"
         meuCheckbox.classList.add('checkbox');
         meuCheckbox.classList.remove('checkbox_ativo');
         meuElemento.classList.add('hamburger-lines');
